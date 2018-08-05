@@ -1,4 +1,4 @@
-package ChapterTwo;
+package Chapter2;
 
 public class DrumKit {
     boolean topHat = true;

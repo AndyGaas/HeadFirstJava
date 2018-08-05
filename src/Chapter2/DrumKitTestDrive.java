@@ -1,4 +1,4 @@
-package ChapterTwo;
+package Chapter2;
 
 class DrumKitTestDrive {
     public static void main(String[] args) {
