@@ -1,4 +1,4 @@
-package Chapter_1;
+package ChapterOne;
 
 public class Shuffle1 {
     public static void main(String[] args) {    //1
