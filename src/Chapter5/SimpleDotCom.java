@@ -1,26 +1,31 @@
 package Chapter5;
 
 public class SimpleDotCom {
-    int [] locationCells;
+
+    int[] locationCells;
     int numOfHits = 0;
 
-    private String checkYourSelf(String userGuess) {
-        return null;
+    public String checkYourSelf(String userGuess) {
+        int guess = Integer.parseInt(userGuess);
+        String result = "Мимо";
+
+        for (int cell : locationCells) {
+            if (guess == cell) {
+                result = "Попал";
+                numOfHits++;
+                break;
+            }
+        }
+
+        if (numOfHits == locationCells.length) {
+            result = "Потопил";
+        }
+
+        System.out.println(result);
+        return result;
     }
 
     public void setLocationCells(int[] locationCells) {
         this.locationCells = locationCells;
-    }
-
-    public void setNumOfHits(int numOfHits) {
-        this.numOfHits = numOfHits;
-    }
-
-    public int[] getLocationCells() {
-        return locationCells;
-    }
-
-    public int getNumOfHits() {
-        return numOfHits;
     }
 }
