@@ -1,4 +1,4 @@
-package Chapter5;
+package chapter5;
 
 public class SimpleDotComGame {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class SimpleDotComGame {
 
         boolean isAlive = true;
 
-        while (isAlive == true) {
+        while (isAlive) {
             String guess = helper.getUserInput("Введите число");
             String result = simpleDotCom.checkYourSelf(guess);
             numOfGuesses++;
