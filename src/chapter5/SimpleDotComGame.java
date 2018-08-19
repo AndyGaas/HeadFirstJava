@@ -5,7 +5,7 @@ public class SimpleDotComGame {
         int numOfGuesses = 0;
         GameHelper helper = new GameHelper();
 
-        SimpleDotCom simpleDotCom = new SimpleDotCom();
+        DotCom simpleDotCom = new DotCom();
         int randomNum = (int) Math.random() * 5;
         int[] locations = {randomNum, randomNum + 1, randomNum + 2};
         simpleDotCom.setLocationCells(locations);
